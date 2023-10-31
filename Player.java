@@ -3,13 +3,21 @@ public class Player {
 
     Player(){
         pieces[0] = new Pawn('A');
-        pieces[0] = new Pawn('B');
-        pieces[0] = new Pawn('C');
-        pieces[0] = new Pawn('D');
-        pieces[0] = new Pawn('E');
-        pieces[0] = new Pawn('F');
-        pieces[0] = new Pawn('G');
-        pieces[0] = new Pawn('H');
+        pieces[1] = new Pawn('B');
+        pieces[2] = new Pawn('C');
+        pieces[3] = new Pawn('D');
+        pieces[4] = new Pawn('E');
+        pieces[5] = new Pawn('F');
+        pieces[6] = new Pawn('G');
+        pieces[7] = new Pawn('H');
+        pieces[8] = new Rook('A');
+        pieces[9] = new Knight('B');
+        pieces[10] = new Bishop('C');
+        pieces[11] = new King('D');
+        pieces[12] = new Queen('E');
+        pieces[13] = new Bishop('F');
+        pieces[14] = new Knight('G');
+        pieces[15] = new Rook('H');
     }
     
     public void displayPieces() {
