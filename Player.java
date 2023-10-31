@@ -3,6 +3,13 @@ public class Player {
 
     Player(){
         pieces[0] = new Pawn('A');
+        pieces[0] = new Pawn('B');
+        pieces[0] = new Pawn('C');
+        pieces[0] = new Pawn('D');
+        pieces[0] = new Pawn('E');
+        pieces[0] = new Pawn('F');
+        pieces[0] = new Pawn('G');
+        pieces[0] = new Pawn('H');
     }
     
     public void displayPieces() {
