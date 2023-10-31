@@ -1,6 +1,7 @@
 public class Pawn extends AbstractChessPiece{
     Pawn(char startingCol) {
         col = startingCol;
+        row = 2;
     }
 
     public void execute() {

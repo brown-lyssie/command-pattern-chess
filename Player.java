@@ -13,8 +13,12 @@ public class Player {
     }
     
     public void displayPieces() {
-        for (int i = 0; i < 16; i++) {
+        for (int i = 0; i < 1; i++) {
             pieces[i].displayPiece();
         }
+    }
+
+    public void movePiece(int pieceIndex) {
+        pieces[pieceIndex].execute();
     }
 }
