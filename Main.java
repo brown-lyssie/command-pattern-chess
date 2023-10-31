@@ -7,5 +7,6 @@ public class Main {
 
     player1.displayPieces();
     player2.displayPieces();
+    player1.movePiece(0);
   }
 }
