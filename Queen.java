@@ -1,6 +1,6 @@
 public class Queen extends AbstractChessPiece{
-    Queen(char startingCol){
-        col = startingCol;
+    Queen(){
+        col = 'D';
         row = 1;
     }
 
