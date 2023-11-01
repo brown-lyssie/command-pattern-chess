@@ -6,30 +6,28 @@ public class Main {
     int turnNum = 0;
     int playerNum = 0;
     Scanner myScanner = new Scanner(System.in);
-    String userSelection;
-    player1.displayPieces();
-    player2.displayPieces();
-    player1.movePiece(0);
-    player2.movePiece(3);
-    player1.movePiece(3);
+    int userSelection;
 
     while (true) {
-      System.out.println("Turn number: " + turnNum.toString());
-      System.out.println("Player " + playerNum.toString() + "'s turn");
-      System.out.print("Select move (0) or display pieces (1): ");
-      userSelection = myScanner.nextLine();
-      if (userSelection == "0") {
-        System.out.print("Select piece (0 through 16) to move: ");
-        userSelection = myScanner.nextLine();
-        player[playerNum].movePiece(userSelection.toInt());
+      System.out.println("Turn number: " + turnNum);
+      System.out.println("Player " + (playerNum + 1) + "'s turn");
+      System.out.println("Select move (0) or display pieces (1): ");
+      userSelection = myScanner.nextInt();
+      if (userSelection == 0) {
+        System.out.println("Select piece (0 through 16) to move: ");
+        userSelection = myScanner.nextInt();
+        players[playerNum].movePiece(userSelection);
+        playerNum++;
+        playerNum %= 2; // keeps it between 0 and 1
       }
-      else if (userSelection == "1") {
-        player[playerNum].displayPieces();
+      else if (userSelection == 1) {
+        players[playerNum].displayPieces();
+        playerNum++;
+        playerNum %= 2; // keeps it between 0 and 1
       }
-      playerNum++;
-      playerNum %= 2; // keeps it between 0 and 1
-
+      else {
+        System.out.println("Please enter a valid input.");
+      }
     }
-
   }
 }
