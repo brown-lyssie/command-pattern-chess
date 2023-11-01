@@ -13,8 +13,8 @@ public class Player {
         pieces[8] = new Rook('A');
         pieces[9] = new Knight('B');
         pieces[10] = new Bishop('C');
-        pieces[11] = new King('D');
-        pieces[12] = new Queen('E');
+        pieces[11] = new King();
+        pieces[12] = new Queen();
         pieces[13] = new Bishop('F');
         pieces[14] = new Knight('G');
         pieces[15] = new Rook('H');
